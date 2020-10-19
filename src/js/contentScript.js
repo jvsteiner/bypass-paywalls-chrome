@@ -1,4 +1,4 @@
-if (!matchDomain(['seekingalpha.com', 'sfchronicle.com', 'cen.acs.org'])) {
+if (isSiteEnabled({ url: window.location.href }) && !matchDomain(['seekingalpha.com', 'sfchronicle.com', 'cen.acs.org'])) {
   window.localStorage.clear();
 }
 
